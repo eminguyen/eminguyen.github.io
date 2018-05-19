@@ -1,36 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.js"></script>
-    <script type="text/javascript" src="jquery.fullPage.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#fullpage').fullpage({
-                sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
-            });
-        });
-    </script>
-
-    <style>
-        .section{
-            font-size: 6em;
-            text-align: center;
-        }
-    </style>
+  <title>Emily Nguyen</title>
+  <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.js"></script>
+  <script type="text/javascript" src="jquery.fullPage.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+  <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 
 <body>
-    <div id="fullpage">
-        <div class="section">Section 1</div>
-        <div class="section">
-            <div class="slide">Section 2 Slide 1</div>
-            <div class="slide">Section 2 Slide 2</div>
-            <div class="slide">Section 2 Slide 3</div>
-        </div>
-        <div class="section">Section 3</div>
+  <div id="fullpage">
+    <div class="section" id="intro">
+      Emily Nguyen
     </div>
+    <div class="section" id="about">
+      Hi I'm Emi!
+      I'm a Computer Engineering major at University of California San Diego.
+    </div>
+    <div class="section">
+      <div class="slide">Section 2 Slide 1</div>
+      <div class="slide">Section 2 Slide 2</div>
+      <div class="slide">Section 2 Slide 3</div>
+    </div>
+    <div class="section">Section 3</div>
+  </div>
 </body>
 </html>
