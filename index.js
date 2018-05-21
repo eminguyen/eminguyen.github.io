@@ -73,3 +73,14 @@ $(document).ready(function() {
 		onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
 	});
 });
+
+
+$('document').ready(function(){
+  var typed = new Typed("#typed", {
+    strings: ["This is a JavaScript library", "This is an ES6 module"],
+    typeSpeed: 0,
+    backSpeed: 0,
+    smartBackspace: true, // this is a default
+    loop: true
+  });
+})
