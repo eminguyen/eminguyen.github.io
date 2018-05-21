@@ -1,7 +1,39 @@
 .section {
-  font-size: 6em;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
 }
 
 #about {
   text-align: center;
+}
+
+#introtext {
+  font-size: 5em;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  color: white;
+  background-color: #9b9b9b;
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }

@@ -17,7 +17,7 @@ $(document).ready(function() {
 		autoScrolling: true,
 		fitToSection: true,
 		fitToSectionDelay: 1000,
-		scrollBar: false,
+		scrollBar: true,
 		easing: 'easeInOutCubic',
 		easingcss3: 'ease',
 		loopBottom: true,
@@ -46,8 +46,8 @@ $(document).ready(function() {
 
 		//Design
 		controlArrows: true,
-		verticalCentered: true,
-		sectionsColor : ['#ccc', '#fff', '#ccc', '#fff'],
+		verticalCentered: false,
+		sectionsColor : ['#fff', '#ccc', '#ccc', '#fff'],
 		paddingTop: '0em',
 		paddingBottom: '0em',
 		fixedElements: '#header, .footer',
@@ -80,7 +80,7 @@ $('document').ready(function(){
     strings: ['developer','designer','runner','gamer','transgender'],
     typeSpeed: 75,
     backSpeed: 75,
-    backDelay: 3000,
+    backDelay: 2000,
     loop: true
   });
 })
