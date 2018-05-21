@@ -1,38 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-
   <title>Emily Nguyen</title>
+
+  <!-- fullPage.js CSS -->
   <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
+
+  <!-- Work Sans font from Google Fonts-->
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.js"></script>
-  <script type="text/javascript" src="jquery.fullPage.js"></script>
-  <script src="typed.js"></script>
-  <script type="text/javascript" src="index.js"></script>
+
+  <!-- Personal stylesheet -->
   <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 
 <body>
   <div id="fullpage">
+
+    <!-- Intro Page -->
     <div class="section" id="intro">
-      <p id="introtext">&lt;emily class="<span id="typed"></span>"/&gt;</p>
+      <p class="introtext">&lt;emily class="<span id="typed"></span>"/&gt;</p>
     </div>
+
+    <!-- About Page -->
     <div class="section" id="about">
-      Hi I'm Emi!
-      I'm a Computer Engineering major at University of California San Diego.
+      <p class="abouttext">
+      <span class="bold" id="blue">Hi I'm Emily!</span>
+      <br>
+      I'm a software engineer and web developer.
+      You can often catch me pushing myself coding at a hackathon or running
+      a marathon.
+      </p>
     </div>
+
+    <!-- Experience Page -->
     <div class="section" id="experience">
+      <p>experience</p>
     </div>
+
     <div class="section" id="featured">
-      <div class="slide">Section 2 Slide 1</div>
-      <div class="slide">Section 2 Slide 2</div>
-      <div class="slide">Section 2 Slide 3</div>
+      <div class="slide" id="antbot">Section 2 Slide 1</div>
+      <div class="slide" id="wdym">Secion 2 Slide 2</div>
+      <div class="slide" id="slimey">Section 2 Slide 3</div>
+      <div class="slide" id="firebae">Section 2 Slide 3</div>
     </div>
     <div class="section" id="projects">Section 3</div>
   </div>
+
+  <!-- jQuery CDN -->
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.js"></script>
+
+  <!-- fullPage.js -->
+  <script type="text/javascript" src="jquery.fullPage.js"></script>
+
+  <!-- Typed.js -->
+  <script src="typed.js"></script>
+
+  <!-- Personal Javascript -->
+  <script type="text/javascript" src="index.js"></script>
 </body>
 </html>

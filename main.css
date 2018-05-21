@@ -3,24 +3,66 @@
   font-weight: 300;
 }
 
-#about {
-  text-align: center;
+.section{
+  background-position: center;
+  background-size: cover;
+}
+.slide{
+  background-position: center;
+  background-size: cover;
 }
 
-#introtext {
-  font-size: 5em;
+.introtext {
+  font-size: 6rem;
   position: absolute;
   bottom: 0;
+  text-align: center;
+  width: 100%;
   margin: 0;
-  color: white;
+  color: #ffffff;
   background-color: #9b9b9b;
 }
+
+#blue {
+  color:rgb(14,210,247);
+}
+
+.bold {
+  font-weight: 400;
+}
+
+.abouttext {
+  position: absolute;
+  font-size: 3.2em;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0vw 6vw;
+  color: rgb(70,70,70);
+}
+
+/*Make the cursor blink*/
 
 .typed-cursor{
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
+}
+
+#antbot {
+  background-image: url(images/antbot.png)
+}
+
+#wdym {
+  background-image: url(images/wdym.png)
+}
+
+#slimey {
+  background-image: url(images/slimey.png)
+}
+
+#firebae {
+  background-image: url(images/firebae.png)
 }
 @keyframes blink{
     0% { opacity:1; }
@@ -36,4 +78,24 @@
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
+}
+
+
+@media (min-width:320px) { /* smartphones, iPhone, portrait 480x320 phones */
+  html {
+    font-size: 12px;
+  }
+}
+@media (min-width:481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+@media (min-width:641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+@media (min-width:961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
+  .introtext {
+    width: auto;
+  }
+}
+@media (min-width:1281px) { /* hi-res laptops and desktops */
 }

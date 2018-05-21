@@ -1,3 +1,5 @@
+/*fullPage.js initialization for scrolling*/
+
 $(document).ready(function() {
 	$('#fullpage').fullpage({
 		//Navigation
@@ -47,7 +49,7 @@ $(document).ready(function() {
 		//Design
 		controlArrows: true,
 		verticalCentered: false,
-		sectionsColor : ['#fff', '#ccc', '#ccc', '#fff'],
+		sectionsColor : '#fff',
 		paddingTop: '0em',
 		paddingBottom: '0em',
 		fixedElements: '#header, .footer',
@@ -74,13 +76,14 @@ $(document).ready(function() {
 	});
 });
 
+/*Typing animation for intro screen*/
 
 $('document').ready(function(){
   var typed = new Typed("#typed", {
     strings: ['developer','designer','runner','gamer','transgender'],
     typeSpeed: 75,
     backSpeed: 75,
-    backDelay: 2000,
+    backDelay: 3000,
     loop: true
   });
 })
