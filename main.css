@@ -13,7 +13,7 @@
 }
 
 .introtext {
-  font-size: 6rem;
+  font-size: 6em;
   position: absolute;
   bottom: 0;
   text-align: center;
@@ -21,6 +21,24 @@
   margin: 0;
   color: #ffffff;
   background-color: #9b9b9b;
+}
+
+.title1 {
+  font-weight: 400;
+  font-size: 6em;
+  margin: 0;
+}
+
+.school {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 30%;
+}
+
+.captiontext {
+  font-size: 2em;
+  margin:0;
 }
 
 #blue {
