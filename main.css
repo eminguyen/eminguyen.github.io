@@ -82,6 +82,34 @@
 #firebae {
   background-image: url(images/firebae.png)
 }
+
+/* CSS for additional projects section */
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 1em;
+  justify-items: stretch;
+  align-items: center
+}
+
+.box > img {
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.project1 {
+  grid-column: 1 / 3;
+  grid-row: 1 / 4;
+}
+
+.project2 {
+  align-self: start;
+  grid-row: 1 / 2
+}
+
+
+
 @keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }
