@@ -1,114 +1,30 @@
-.section {
+html body {
   font-family: 'Work Sans', sans-serif;
   font-weight: 300;
 }
 
-.section{
-  background-position: center;
-  background-size: cover;
-}
-.slide{
-  background-position: center;
-  background-size: cover;
-}
+/* Contacts */
+
+/* Typed Text */
 
 .introtext {
-  font-size: 6em;
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-  width: 100%;
-  margin: 0;
-  color: #ffffff;
-  background-color: #9b9b9b;
-}
-
-.title1 {
-  font-weight: 400;
-  font-size: 6em;
-  margin: 0;
-}
-
-.school {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  top: 30%;
-}
-
-.captiontext {
   font-size: 2em;
-  margin:0;
-}
-
-#blue {
-  color:rgb(14,210,247);
-}
-
-.bold {
-  font-weight: 400;
-}
-
-.abouttext {
   position: absolute;
-  font-size: 3.2em;
-  top: 50%;
-  transform: translateY(-50%);
-  margin: 0vw 6vw;
-  color: rgb(70,70,70);
+  left: 0;
+  bottom: 10%;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  color: rgb(255, 255, 255);
+  background-color: rgba(14, 210, 247, .6);
 }
 
-/*Make the cursor blink*/
-
-.typed-cursor{
+.typed-cursor {
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
-
-#antbot {
-  background-image: url(images/antbot.png)
-}
-
-#wdym {
-  background-image: url(images/wdym.png)
-}
-
-#slimey {
-  background-image: url(images/slimey.png)
-}
-
-#firebae {
-  background-image: url(images/firebae.png)
-}
-
-/* CSS for additional projects section */
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: minmax(100px, auto);
-  grid-gap: 1em;
-  justify-items: stretch;
-  align-items: center
-}
-
-.box > img {
-  object-fit: cover;
-  max-width: 100%;
-}
-
-.project1 {
-  grid-column: 1 / 3;
-  grid-row: 1 / 4;
-}
-
-.project2 {
-  align-self: start;
-  grid-row: 1 / 2
-}
-
-
 
 @keyframes blink{
     0% { opacity:1; }
@@ -126,21 +42,156 @@
     100% { opacity:1; }
 }
 
+/* Bubbles */
+
+html,
+body,
+#bubbles { height: 100% }
+body { overflow: hidden }
+#bubbles { padding: 100px 0 }
+.bubble {
+    width: 60px;
+    height: 60px;
+    background: rgba(14,210,247,.7);
+    border-radius: 200px;
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
+    position: absolute;
+}
+
+.x1 {
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0.2;
+    -webkit-animation: moveclouds 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -o-animation: moveclouds 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
+}
+
+.x2 {
+    left: 10%;
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 0.5;
+    -webkit-animation: moveclouds 25s linear infinite, sideWays 5s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 25s linear infinite, sideWays 5s ease-in-out infinite alternate;
+    -o-animation: moveclouds 25s linear infinite, sideWays 5s ease-in-out infinite alternate;
+}
+.x3 {
+    left: 30%;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.3;
+    -webkit-animation: moveclouds 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -o-animation: moveclouds 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+}
+.x4 {
+  left: 50%;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  transform: scale(0.9);
+  opacity: 0.4;
+  -webkit-animation: moveclouds 14s linear infinite, sideWays 3s ease-in-out infinite alternate;
+  -moz-animation: moveclouds 14s linear infinite, sideWays 3s ease-in-out infinite alternate;
+  -o-animation: moveclouds 14s linear infinite, sideWays 3s ease-in-out infinite alternate;
+}
+.x5 {
+    left: 60%;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.3;
+    -webkit-animation: moveclouds 10s linear infinite, sideWays 1s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 10s linear infinite, sideWays 1s ease-in-out infinite alternate;
+    -o-animation: moveclouds 10s linear infinite, sideWays 1s ease-in-out infinite alternate;
+}
+.x6 {
+    left: 80%;
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    transform: scale(0.75);
+    opacity: 0.35;
+    -webkit-animation: moveclouds 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -o-animation: moveclouds 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes moveclouds {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -100%;
+    }
+}
+
+@-webkit-keyframes sideWays {
+    0% {
+        margin-left:0px;
+    }
+    100% {
+        margin-left:50px;
+    }
+}
+
+@-moz-keyframes moveclouds {
+    0% {
+        top: 100%;
+    }
+
+    100% {
+        top: -100%;
+    }
+}
+
+@-moz-keyframes sideWays {
+    0% {
+        margin-left:0px;
+    }
+    100% {
+        margin-left:50px;
+    }
+}
+@-o-keyframes moveclouds {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -100%;
+    }
+}
+
+@-o-keyframes sideWays {
+    0% {
+        margin-left:0px;
+    }
+    100% {
+        margin-left:50px;
+    }
+}
+
+/* Media Queries */
 
 @media (min-width:320px) { /* smartphones, iPhone, portrait 480x320 phones */
-  html {
-    font-size: 12px;
-  }
 }
 @media (min-width:481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 }
 @media (min-width:641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  .introtext {
+    font-size: 4em;
+  }
 }
 @media (min-width:961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */
 }
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
   .introtext {
+    font-size: 6em;
     width: auto;
+    border-radius: 0px 30px 30px 0px;
   }
 }
 @media (min-width:1281px) { /* hi-res laptops and desktops */
