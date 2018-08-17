@@ -1,5 +1,3 @@
-/*fullPage.js initialization for scrolling*/
-
 $(document).ready(function() {
 
 	/*Typing animation for intro screen*/
