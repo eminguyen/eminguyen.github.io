@@ -4,11 +4,14 @@
 
   <title>hi i'm emily</title>
 
-  <!-- Work Sans font from Google Fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet">
+  <!-- Work Sans Font from Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet" />
 
-  <!-- Personal stylesheet -->
-  <link rel="stylesheet" type="text/css" href="index.css">
+  <!-- Personal Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="build/stylesheets/menu.css" />
+  <link rel="stylesheet" type="text/css" href="build/stylesheets/typed.css" />
+  <link rel="stylesheet" type="text/css" href="build/stylesheets/bubbles.css" />
+  <link rel="stylesheet" type="text/css" href="build/stylesheets/index.css" />
 </head>
 
 <body>
@@ -29,25 +32,24 @@
   </nav>
 
 
-  <!-- filters -->
+  <!-- SVG Filters -->
   <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-      <defs>
-        <filter id="shadowed-goo">
-
-            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-            <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
-            <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
-            <feOffset in="shadow" dx="1" dy="1" result="shadow" />
-            <feComposite in2="shadow" in="goo" result="goo" />
-            <feComposite in2="goo" in="SourceGraphic" result="mix" />
-        </filter>
-        <filter id="goo">
-            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-            <feComposite in2="goo" in="SourceGraphic" result="mix" />
-        </filter>
-      </defs>
+    <defs>
+      <filter id="shadowed-goo">
+        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+        <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+        <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
+        <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+        <feComposite in2="shadow" in="goo" result="goo" />
+        <feComposite in2="goo" in="SourceGraphic" result="mix" />
+      </filter>
+      <filter id="goo">
+        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+        <feComposite in2="goo" in="SourceGraphic" result="mix" />
+      </filter>
+    </defs>
   </svg>
 
   <!-- Intro Page -->
@@ -265,10 +267,11 @@
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.js"></script>
+
   <!-- Typed.js -->
-  <script src="typed.js"></script>
+  <script src="build/scripts/typed.js"></script>
 
   <!-- Personal Javascript -->
-  <script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript" src="build/scripts/index.js"></script>
 </body>
 </html>
