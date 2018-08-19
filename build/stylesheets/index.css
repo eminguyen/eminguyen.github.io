@@ -6,6 +6,12 @@ html body {
   margin: 0;
 }
 
+.title {
+  margin: 0;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
 /* Intro */
 
 .intro {
@@ -45,6 +51,7 @@ html body {
 
 /* Footer */
 .footer {
+  padding-top: 50px;
   width: 100%;
   display: inline-block;
   font-weight: 400;
