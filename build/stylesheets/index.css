@@ -74,7 +74,7 @@ html body {
   }
 }
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
-  html-body {
+  html body {
     font-size: 1.8em;
   }
 

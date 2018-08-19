@@ -9,6 +9,49 @@ p {
   width: 100%;
 }
 
+button:focus {
+  outline: 0;
+}
+
+button:active {
+  outline: 0;
+}
+
+#filters {
+  padding-top: 100px;
+  width: 100%;
+  text-align: center;
+}
+
+.btn {
+  min-width: 10vw;
+  font-size: 1em;
+  font-weight: 300;
+  color: rgb(100, 100, 100);
+  border-radius: 30px;
+  box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.3);
+  background: rgb(255, 255, 255);
+  width: auto;
+  display: inline-block;
+  margin: 0 2.5vw;
+}
+
+.btn:hover {
+  border-color: rgb(14, 210, 247);
+  background: rgb(14, 210, 247);
+  color: rgb(255, 255, 255);
+}
+
+.btn.active {
+  border-color: rgb(7, 187, 223);
+  background: rgb(7, 187, 223);
+  color: rgb(255, 255, 255);
+}
+
+.show {
+  display: block !important;
+}
+
 .timeline {
   box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.3);
   width: 60%;
@@ -24,6 +67,7 @@ p {
 }
 
 .event {
+  display: none;
   width: 100%;
   vertical-align: middle;
   box-sizing: border-box;
