@@ -1,0 +1,70 @@
+p {
+  margin : 0;
+  padding : .8em;
+}
+
+.experience {
+  padding: 100px 0;
+  text-align: left;
+  width: 100%;
+}
+
+.timeline {
+  box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.3);
+  width: 60%;
+  margin: 0 20%;
+  border-radius: 30px;
+  border-left: 0.25em solid rgb(7, 187, 223);
+  background: rgba(255, 255, 255);
+  line-height: 1.4em;
+  padding-left: 0;
+  list-style: none;
+  text-align: left;
+  border-radius: 30px;
+}
+
+.event {
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.timeline .event:before,
+.timeline .event:after {
+  position: absolute;
+  display: block;
+  top: 30px;
+}
+
+.timeline .event:after {
+  box-shadow: 0 0 0 0.2em rgb(7, 187, 223);
+  left: -.5em;
+  background: rgb(14, 210, 247);
+  border-radius: 50%;
+  height: 0.75em;
+  width: 0.75em;
+  content: ""
+}
+
+.timeline .event:hover:after{
+  background: rgb(255, 255, 255);
+}
+
+.timeline .event .event-info {
+  display: none;
+}
+
+.event-content {
+  padding: 10px;
+  text-align: left;
+  position: relative;
+}
+
+.event-title a:before {
+  padding-right: 5px;
+}
+
+.event-title {
+  text-indent: 2px;
+}

@@ -1,15 +1,17 @@
 /* Typed.js Blinking Cursor */
 
 .introtext {
-  font-size: 2em;
+  font-size: 60px;
   position: absolute;
   left: 0;
   bottom: 10%;
   text-align: center;
   width: 100%;
   margin: 0;
+  padding: 0;
   color: rgb(255, 255, 255);
   background-color: rgba(14, 210, 247, .6);
+  word-wrap: break-word;
 }
 
 .typed-cursor {

@@ -1,5 +1,6 @@
 html body {
   font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
   font-weight: 300;
   margin: 0;
 }
@@ -19,7 +20,7 @@ html body {
 .about {
   position: relative;
   width: 100vw;
-  height: 50vh;
+  padding-bottom: 200px;
   background: rgb(14,210,247);  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, rgb(255, 255, 255), rgb(178,254,250), rgb(14,210,247));  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(178,254,250), rgb(14,210,247)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -45,55 +46,6 @@ html body {
   font-weight: 300;
 }
 
-/* Timeline */
-.experiece {
-  padding: 10%;
-}
-
-button.accordion {
-  background-color: rgba(255, 255, 255, 0);
-  color: rgb(255, 255, 255);
-  border-radius: 4px;
-  cursor: pointer;
-  padding: 8px;
-  width: 100%;
-  margin: 4px 0;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.3s;
-}
-
-button.accordion:hover {
-  background-color: rgba(255,255,255,0.47);
-}
-
-button.accordion.active {
-  background-color: #ffffff;
-  color: #000000;
-  border-radius: 4px 4px 0 0;
-  margin: 4px 0 0;
-}
-
-div.panel {
-  background-color: rgba(255,255,255,0.8);
-  color: #000000;
-  border-radius: 0 0 4px 4px;
-  margin: 0;
-  padding:0 8px;
-  max-height: 0;
-  overflow: hidden;
-  transition: 0.3s;
-  opacity: 0;
-}
-
-div.panel.show {
-  margin: 2px 0 4px;
-  padding: 8px;
-  opacity: 1;
-  max-height: 500px;
-}
-
 /* Media Queries */
 
 @media (min-width:320px) { /* smartphones, iPhone, portrait 480x320 phones */
@@ -101,17 +53,25 @@ div.panel.show {
 @media (min-width:481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 }
 @media (min-width:641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-  .introtext {
-    font-size: 4em;
-  }
 }
 @media (min-width:961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */
+  html body {
+    font-size: 18px;
+  }
+
+  .introtext {
+    font-size: 70px;
+  }
 }
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
+  html-body {
+    font-size: 20px;
+  }
+
   .introtext {
-    font-size: 6em;
     width: auto;
     border-radius: 0px 30px 30px 0px;
+    font-size: 70px;
   }
 }
 @media (min-width:1281px) { /* hi-res laptops and desktops */
