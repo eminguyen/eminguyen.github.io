@@ -40,14 +40,25 @@ p {
 .timeline .event:after {
   box-shadow: 0 0 0 0.2em rgb(7, 187, 223);
   left: -.5em;
-  background: rgb(14, 210, 247);
   border-radius: 50%;
   height: 0.75em;
   width: 0.75em;
   content: ""
 }
 
-.timeline .event:hover:after{
+.timeline .event.work:after {
+  background: rgb(14, 210, 247);
+}
+
+.timeline .event.eevent:after {
+  background: rgb(181, 241, 253);
+}
+
+.timeline .event.personal:after {
+  background: rgb(4, 164, 200);
+}
+
+.timeline .event:hover:after {
   background: rgb(255, 255, 255);
 }
 
