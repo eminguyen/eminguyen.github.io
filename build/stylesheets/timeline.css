@@ -9,12 +9,15 @@ p {
   width: 100%;
 }
 
+button {
+  border-width: 0;
+}
+
 button:focus {
   outline: 0;
 }
 
 button:active {
-  border-width: 0;
   outline: 0;
 }
 
