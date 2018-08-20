@@ -41,6 +41,7 @@ button:active {
   border-color: rgb(14, 210, 247);
   background: rgb(14, 210, 247);
   color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 
 .btn.active {

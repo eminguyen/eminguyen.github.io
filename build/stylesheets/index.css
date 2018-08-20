@@ -6,10 +6,28 @@ html body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
 .title {
   margin: 0;
   text-align: center;
   color: rgb(255, 255, 255);
+}
+
+.emphasis {
+  font-weight: bold;
+  display: inline-block;
+  color: rgb(14,210,247);
 }
 
 /* Intro */
@@ -25,6 +43,7 @@ html body {
 
 /* About Page */
 .about {
+  word-break: break-word;
   position: relative;
   width: 100vw;
   padding-bottom: 200px;
