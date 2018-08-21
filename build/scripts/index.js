@@ -9,7 +9,7 @@ $(document).ready(function() {
     loop: true
   });
 
-	$('.timeline .event').hover(function() {
+	$('.timeline .event').click(function() {
 	  $(this).children('.event-content').children('.event-info').slideToggle();
 	})
 

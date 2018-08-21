@@ -79,6 +79,11 @@ button:active {
   position: relative;
 }
 
+.event-title:hover {
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+
 .timeline .event:before,
 .timeline .event:after {
   position: absolute;
