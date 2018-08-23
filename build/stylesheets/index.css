@@ -55,7 +55,7 @@ a:visited {
 .container {
   background: rgb(255, 255, 255);
   width: 60%;
-  margin: 0 20%;
+  margin: 0 auto;
   left: 0;
   border-radius: 30px;
   line-height: 2;
@@ -84,12 +84,12 @@ a:visited {
 }
 /* Media Queries */
 
-@media (min-width:320px) { /* smartphones, iPhone, portrait 480x320 phones */
+@media (max-width: 961px) {
+  .container {
+    width: 95%;
+  }
 }
-@media (min-width:481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-}
-@media (min-width:641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-}
+
 @media (min-width:961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */
   html body {
     font-size: 1.6em;
