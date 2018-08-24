@@ -11,7 +11,15 @@ $(document).ready(function() {
 
 	$('.timeline .event').click(function() {
 	  $(this).children('.event-content').children('.event-info').slideToggle();
-	})
+	});
+
+	$('.projects-but').click(function() {
+		$('.projects').slideToggle();
+	});
+
+	$('.timeline-but').click(function() {
+		$('.timeline').slideToggle();
+	});
 
 });
 

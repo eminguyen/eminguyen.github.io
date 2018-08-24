@@ -1,0 +1,88 @@
+.project-card {
+  position: relative;
+  display: block;
+  width: 60%;
+  min-height: 40%;
+  height: auto;
+  margin: 80px auto;
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.3);
+}
+.project-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 80px -25px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s;
+}
+.project-card .info-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-blend-mode: multiply;
+  z-index: 2;
+  border-radius: 30px;
+}
+.project-card .info-section .project-title {
+  position: relative;
+  padding: 0px;
+}
+.project-card .info-section .project-desc {
+  padding: 0px;
+}
+.project-card .blur-back {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  right: 0;
+  background-size: cover;
+  border-radius: 11px;
+}
+
+@media screen and (min-width: 768px) {
+  .project-title {
+    width: 65%;
+  }
+
+  .project-desc {
+    width: 50%;
+  }
+
+  .info-section {
+    background: linear-gradient(to right, #e5e6e6 50%, transparent 100%);
+  }
+
+  .blur-back {
+    width: 80%;
+    background-position: -100% 10% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .movie-card {
+    width: 95%;
+    margin: 70px auto;
+  }
+
+  .blur-back {
+    width: 100%;
+    background-position: 50% 50% !important;
+  }
+
+  .project-title {
+    width: 100%;
+    margin-top: 85px;
+  }
+
+  .project-desc {
+    width: 100%;
+  }
+
+  .info-section {
+    margin-top: 50%;
+    height: 50%;
+    background: linear-gradient(to top, #e5e6e6 50%, transparent 100%);
+    display: inline-grid;
+  }
+}
+
+/*# sourceMappingURL=projects.css.map */
