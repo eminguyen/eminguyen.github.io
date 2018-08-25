@@ -2,7 +2,7 @@
   position: relative;
   display: block;
   width: 60%;
-  min-height: 40%;
+  min-height: 40vh;
   height: auto;
   margin: 80px auto;
   overflow: hidden;
@@ -17,6 +17,7 @@
 .project-card .info-section {
   position: relative;
   width: 100%;
+  min-height: 40vh;
   height: 100%;
   background-blend-mode: multiply;
   z-index: 2;
@@ -35,7 +36,6 @@
   z-index: 1;
   height: 100%;
   right: 0;
-  background-size: cover;
   border-radius: 11px;
 }
 
@@ -49,16 +49,22 @@
   }
 
   .info-section {
-    background: linear-gradient(to right, #e5e6e6 50%, transparent 100%);
+    background: linear-gradient(to right, white 50%, transparent 100%);
   }
 
   .blur-back {
     width: 80%;
-    background-position: -100% 10% !important;
+  }
+
+  .bright-back {
+    background: url("../images/wdym.png") no-repeat;
+    width: 70%;
+    background-position: left;
+    background-size: cover;
   }
 }
 @media screen and (max-width: 768px) {
-  .movie-card {
+  .project-card {
     width: 95%;
     margin: 70px auto;
   }
@@ -82,6 +88,12 @@
     height: 50%;
     background: linear-gradient(to top, #e5e6e6 50%, transparent 100%);
     display: inline-grid;
+  }
+
+  .bright-back {
+    background: url("../images/wdym.png") center no-repeat;
+    background-size: cover;
+    width: 100%;
   }
 }
 
