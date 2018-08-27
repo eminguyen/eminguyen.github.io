@@ -9,9 +9,10 @@ html body {
 
 a {
   text-decoration : none;
+  color: rgb(100,100,100)
 }
 
-a:hover {
+.emphasis a:hover {
   text-decoration : underline;
 }
 
@@ -69,7 +70,7 @@ a:visited {
   word-break: break-word;
   position: relative;
   width: 100vw;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
   background: rgb(14,210,247);  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, rgb(255, 255, 255), rgb(178,254,250), rgb(14,210,247));  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(178,254,250), rgb(14,210,247)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -79,6 +80,10 @@ a:visited {
   text-align: center;
   color: rgb(14, 210, 247);
   margin-bottom: 10px;
+}
+
+.projects {
+  padding-bottom: 100px;
 }
 
 /* Footer */

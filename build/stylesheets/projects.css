@@ -1,7 +1,8 @@
 .project {
   position: relative;
   display: block;
-  min-height: 40vh;
+  min-height: 50vh;
+  height: auto;
   border-radius: 30px;
   box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.3);
   display: none;
@@ -9,18 +10,24 @@
 .project .info-section {
   position: relative;
   width: 100%;
-  min-height: 40vh;
-  height: 100%;
+  min-height: 50vh;
+  height: auto;
   background-blend-mode: multiply;
   z-index: 2;
   border-radius: 30px;
 }
 .project .info-section .project-title {
+  font-weight: 400;
   position: relative;
-  padding: 0px;
+  padding: 0px !important;
+  margin: 0px;
 }
 .project .info-section .project-desc {
-  padding: 0px;
+  padding: 0px !important;
+  margin: 0px;
+}
+.project .info-section p {
+  padding-bottom: 0px;
 }
 .project .blur-back {
   position: absolute;
@@ -31,10 +38,34 @@
   border-radius: 11px;
 }
 .project .project-back {
-  background: url("../images/wdym.png") no-repeat;
   background-position: left;
   width: 70%;
-  background-size: cover;
+  background-size: cover !important;
+}
+.project #ant-back {
+  background: url("../images/antbot.png") no-repeat;
+}
+.project #assure-back {
+  background: url("../images/assure.png") no-repeat;
+}
+.project #bbb-back {
+  background: url("../images/bbb.png") no-repeat;
+}
+.project #care-back {
+  background: url("../images/care.png") no-repeat;
+}
+.project #fire-back {
+  background: url("../images/firebae.png") no-repeat;
+}
+.project #run-back {
+  background: url("../images/runwithme.gif") no-repeat;
+}
+.project #wdym-back {
+  background: url("../images/wdym.png") no-repeat;
+}
+
+.project:hover {
+  border: solid #0ed2f7;
 }
 
 #project-filters {
@@ -74,7 +105,7 @@
 
   .project-title {
     width: 100%;
-    margin-top: 85px;
+    margin-top: 10%;
   }
 
   .project-desc {

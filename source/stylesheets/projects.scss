@@ -1,27 +1,34 @@
 .project{
   position: relative;
   display: block;
-  min-height: 40vh;
+  min-height: 50vh;
+  height: auto;
   border-radius: 30px;
   box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.3);
   display: none;
   .info-section{
     position: relative;
     width: 100%;
-    min-height: 40vh;
-    height: 100%;
+    min-height: 50vh;
+    height: auto;
 	  background-blend-mode: multiply;
     z-index: 2;
     border-radius: 30px;
     .project-title{
+      font-weight: 400;
       position: relative;
-      padding: 0px;
+      padding: 0px !important;
+      margin: 0px;
     }
     .project-desc{
-      padding: 0px;
+      padding: 0px !important;
+      margin: 0px;
+    }
+    p {
+      padding-bottom: 0px;
     }
   }
-  .blur-back{
+  .blur-back {
     position: absolute;
     top: 0;
     z-index: 1;
@@ -29,12 +36,43 @@
     border-radius: 11px;
   }
 
-  .project-back{
-    background: url('../images/wdym.png') no-repeat;
+  .project-back {
     background-position: left;
     width: 70%;
-    background-size: cover;
+    background-size: cover !important;
   }
+
+  #ant-back {
+    background: url('../images/antbot.png') no-repeat;
+  }
+
+  #assure-back {
+    background: url('../images/assure.png') no-repeat;
+  }
+
+  #bbb-back {
+    background: url('../images/bbb.png') no-repeat;
+  }
+
+  #care-back {
+    background: url('../images/care.png') no-repeat;
+  }
+
+  #fire-back {
+    background: url('../images/firebae.png') no-repeat;
+  }
+
+  #run-back {
+    background: url('../images/runwithme.gif') no-repeat;
+  }
+
+  #wdym-back {
+    background: url('../images/wdym.png') no-repeat;
+  }
+}
+
+.project:hover {
+  border: solid rgb(14,210,247);
 }
 
 #project-filters {
@@ -75,7 +113,7 @@
 
   .project-title{
     width : 100%;
-    margin-top : 85px;
+    margin-top : 10%;
   }
 
   .project-desc{

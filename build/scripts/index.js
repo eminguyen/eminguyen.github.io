@@ -13,20 +13,12 @@ $(document).ready(function() {
 	  $(this).children('.event-content').children('.event-info').slideToggle();
 	});
 
-	$('.projects-but').click(function() {
-		$('.projects').slideToggle();
-	});
-
-	$('.timeline-but').click(function() {
-		$('.experience').slideToggle();
-	});
+	filterSelection("feature", 'project');
+	filterSelection('all', 'event');
+	highlightActive("project-filters");
+	highlightActive("event-filters");
 
 });
-
-filterSelection("feature", 'project');
-filterSelection('all', 'event');
-highlightActive("project-filters");
-highlightActive("event-filters");
 
 function filterSelection(c, className) {
   var x, i;
