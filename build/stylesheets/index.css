@@ -9,7 +9,7 @@ html body {
 
 a {
   text-decoration : none;
-  color: rgb(100,100,100)
+  color: rgb(100,100,100);
 }
 
 .emphasis a:hover {
@@ -99,6 +99,14 @@ a:visited {
 .heart {
   display: inline-block;
   color: rgb(0, 0, 255);
+}
+
+.footer a {
+  color: rgb(255, 255, 255);
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
 /* Media Queries */
 

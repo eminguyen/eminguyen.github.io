@@ -60,6 +60,10 @@
 .project #run-back {
   background: url("../images/runwithme.gif") no-repeat;
 }
+.project #slime-back {
+  background: url("../images/slimey.gif") no-repeat;
+  background-position: center;
+}
 .project #wdym-back {
   background: url("../images/wdym.png") no-repeat;
 }
