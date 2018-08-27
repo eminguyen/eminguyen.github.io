@@ -18,15 +18,19 @@ $(document).ready(function() {
 	});
 
 	$('.timeline-but').click(function() {
-		$('.timeline').slideToggle();
+		$('.experience').slideToggle();
 	});
 
 });
 
-filterSelection("all")
-function filterSelection(c) {
+filterSelection("feature", 'project');
+filterSelection('all', 'event');
+highlightActive("project-filters");
+highlightActive("event-filters");
+
+function filterSelection(c, className) {
   var x, i;
-  x = document.getElementsByClassName("event");
+  x = document.getElementsByClassName(className);
   if (c == "all") c = "";
   // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
   for (i = 0; i < x.length; i++) {
@@ -61,12 +65,14 @@ function w3RemoveClass(element, name) {
 }
 
 // Add active class to the current control button (highlight it)
-var btnContainer = document.getElementById("filters");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
+function highlightActive(filterName) {
+	var btnContainer = document.getElementById(filterName);
+	var btns = btnContainer.getElementsByClassName("btn");
+	for (var i = 0; i < btns.length; i++) {
+	  btns[i].addEventListener("click", function() {
+	    var current = btnContainer.getElementsByClassName("active");
+	    current[0].className = current[0].className.replace(" active", "");
+	    this.className += " active";
+	  });
+  }
 }

@@ -77,19 +77,20 @@
   <div class="about">
     <div class="container">
       <h1> hi i'm emily </h1>
-      <p> I develop and design cool things usually in the color blue.
-          Currently balancing working 3 jobs, leading 3 organizations, and
-          studying full time. I like tiring myself either by running marathons
-          or losing sleep at hackathons. I also drink loads of boba, play
-          thousands of hours of League of Legends, and sometimes
-          drive 200 miles to see my annoying siblings.
-          <br>
+      <p>
+        I develop and design cool things usually in the color blue.
+        Currently balancing working 3 jobs, leading 3 organizations, and
+        studying full time. I like tiring myself either by running marathons
+        or losing sleep at hackathons. I also drink loads of boba, play
+        thousands of hours of League of Legends, and sometimes
+        drive 200 miles to see my annoying siblings.
+        <br>
           Smash that hamburger to the right for contact.
-          <br>
-          Email is emily@computer.org.
-          <a class="emphasis" href="emilynguyenresume.pdf">
-            Resume here.
-          </a>
+        <br>
+        Email is emily@computer.org.
+        <a class="emphasis" href="emilynguyenresume.pdf">
+          Resume here.
+        </a>
       <p>
     </div>
   </div>
@@ -99,12 +100,19 @@
     <!-- Projects -->
 
   <h1 class="title projects-but"> stuff i've made</h1>
-  
+
+  <div id="project-filters">
+    <button class="btn active" onclick="filterSelection('feature', 'project')">Featured</button>
+    <button class="btn" onclick="filterSelection('all', 'project')">All</button>
+  </div>
+
+
   <div class="projects">
-    <div class="project-card" id="bright">
+
+    <div class="project container feature" id="bright">
       <div class="info-section">
         <div class="project-title">
-          <p>Antbot</p>
+          <p>What Do You Meme</p>
         </div>
         <div class="project-desc">
           <p>
@@ -112,22 +120,108 @@
           </p>
         </div>
       </div>
-      <div class="blur-back bright-back"></div>
+      <div class="blur-back wdym-back"></div>
+    </div>
+
+    <div class="project container feature" id="bright">
+      <div class="info-section">
+        <div class="project-title">
+          <p>What Do You Meme</p>
+        </div>
+        <div class="project-desc">
+          <p>
+            A bot for the VoiP app Discord with over 300 users
+          </p>
+        </div>
+      </div>
+      <div class="blur-back wdym-back"></div>
+    </div>
+
+    <div class="project container" id="bright">
+      <div class="info-section">
+        <div class="project-title">
+          <p>What Do You Meme</p>
+        </div>
+        <div class="project-desc">
+          <p>
+            A bot for the VoiP app Discord with over 300 users
+          </p>
+        </div>
+      </div>
+      <div class="blur-back project-back wdym-back"></div>
+    </div>
+
+    <div class="project container" id="bright">
+      <div class="info-section">
+        <div class="project-title">
+          <p>What Do You Meme</p>
+        </div>
+        <div class="project-desc">
+          <p>
+            A bot for the VoiP app Discord with over 300 users
+          </p>
+        </div>
+      </div>
+      <div class="blur-back wdym-back"></div>
+    </div>
+
+    <div class="project container" id="bright">
+      <div class="info-section">
+        <div class="project-title">
+          <p>What Do You Meme</p>
+        </div>
+        <div class="project-desc">
+          <p>
+            A bot for the VoiP app Discord with over 300 users
+          </p>
+        </div>
+      </div>
+      <div class="blur-back wdym-back"></div>
+    </div>
+
+    <div class="project container" id="bright">
+      <div class="info-section">
+        <div class="project-title">
+          <p>What Do You Meme</p>
+        </div>
+        <div class="project-desc">
+          <p>
+            A bot for the VoiP app Discord with over 300 users
+          </p>
+        </div>
+      </div>
+      <div class="blur-back wdym-back"></div>
+    </div>
+
+    <div class="project container" id="bright">
+      <div class="info-section">
+        <div class="project-title">
+          <p>What Do You Meme</p>
+        </div>
+        <div class="project-desc">
+          <p>
+            A bot for the VoiP app Discord with over 300 users
+          </p>
+        </div>
+      </div>
+      <div class="blur-back wdym-back"></div>
     </div>
   </div>
 
-   <h1 class="title timeline-but"> my fave moments</h1>
+    <h1 class="title timeline-but">my fave moments</h1>
 
-    <!-- Timeline Filters -->
-    <div id="filters">
-      <button class="btn active" onclick="filterSelection('all')">All</button>
-      <button class="btn" onclick="filterSelection('work')">Work</button>
-      <button class="btn" onclick="filterSelection('eevent')">Events</button>
-      <button class="btn" onclick="filterSelection('personal')">Personal</button>
-    </div>
-
-    <!-- Timeline -->
     <div class="experience">
+
+      <!-- Timeline Filters -->
+      <div id="event-filters">
+        <button class="btn active" onclick="filterSelection('all', 'event')">All</button>
+        <button class="btn" onclick="filterSelection('work', 'event')">Work</button>
+        <button class="btn" onclick="filterSelection('eevent', 'event')">Events</button>
+        <button class="btn" onclick="filterSelection('personal', 'event')">Personal</button>
+      </div>
+
+      <!-- Timeline -->
+
       <ul class="timeline">
 
         <li class="event work">
@@ -564,29 +658,16 @@
     </div>
 
 
-    <div class="projects">
-      <div class="card">
-
-      </div>
-
-      <div class="card">
-      </div>
-
-      <div class="card">
-      </div>
-    </div>
-
     <!-- Footer-->
-
     <div class="footer">
       Coded with
       <div class="heart">
         &#9829;
       </div>
-      and Stack Overflow by Emily Nguyen
+      by Emily Nguyen. Source code here.
       <br>
-      Source code here
     </div>
+
   </div>
 
   <!-- jQuery CDN -->

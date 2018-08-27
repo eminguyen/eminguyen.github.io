@@ -1,20 +1,12 @@
-.project-card {
+.project {
   position: relative;
   display: block;
-  width: 60%;
   min-height: 40vh;
-  height: auto;
-  margin: 80px auto;
-  overflow: hidden;
   border-radius: 30px;
   box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.3);
+  display: none;
 }
-.project-card:hover {
-  transform: scale(1.02);
-  box-shadow: 0px 0px 80px -25px rgba(0, 0, 0, 0.5);
-  transition: all 0.4s;
-}
-.project-card .info-section {
+.project .info-section {
   position: relative;
   width: 100%;
   min-height: 40vh;
@@ -23,14 +15,14 @@
   z-index: 2;
   border-radius: 30px;
 }
-.project-card .info-section .project-title {
+.project .info-section .project-title {
   position: relative;
   padding: 0px;
 }
-.project-card .info-section .project-desc {
+.project .info-section .project-desc {
   padding: 0px;
 }
-.project-card .blur-back {
+.project .blur-back {
   position: absolute;
   top: 0;
   z-index: 1;
@@ -38,8 +30,20 @@
   right: 0;
   border-radius: 11px;
 }
+.project .project-back {
+  background: url("../images/wdym.png") no-repeat;
+  background-position: left;
+  width: 70%;
+  background-size: cover;
+}
 
-@media screen and (min-width: 768px) {
+#project-filters {
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 961px) {
   .project-title {
     width: 65%;
   }
@@ -55,17 +59,11 @@
   .blur-back {
     width: 80%;
   }
-
-  .bright-back {
-    background: url("../images/wdym.png") no-repeat;
-    width: 70%;
-    background-position: left;
-    background-size: cover;
-  }
 }
-@media screen and (max-width: 768px) {
-  .project-card {
+@media screen and (max-width: 961px) {
+  .project {
     width: 95%;
+    max-height: 40vh;
     margin: 70px auto;
   }
 
@@ -84,16 +82,16 @@
   }
 
   .info-section {
-    margin-top: 50%;
+    position: relative;
+    margin-top: 0%;
     height: 50%;
     background: linear-gradient(to top, #e5e6e6 50%, transparent 100%);
     display: inline-grid;
   }
 
-  .bright-back {
-    background: url("../images/wdym.png") center no-repeat;
-    background-size: cover;
-    width: 100%;
+  .project-back {
+    background-position: center !important;
+    width: 100% !important;
   }
 }
 

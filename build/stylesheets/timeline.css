@@ -21,7 +21,7 @@ button:active {
   outline: 0;
 }
 
-#filters {
+#event-filters {
   padding: 20px 0;
   width: 100%;
   text-align: center;
@@ -51,10 +51,6 @@ button:active {
   border-color: rgb(7, 187, 223);
   background: rgb(7, 187, 223);
   color: rgb(255, 255, 255);
-}
-
-.show {
-  display: block !important;
 }
 
 .timeline {
