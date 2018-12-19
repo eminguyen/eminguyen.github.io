@@ -233,7 +233,7 @@ var stage = document.getElementById('stage');
 					ball.vy = Math.random() * 50 - 25;
 					ball.size = 100 - (ball.bounce * 50);
 					ball.x = Math.random() * stageWidth;
-					ball.y = Math.random() * stageHeight;
+					ball.y = stageHeight;
 					balls[balls.length] = ball;
 				}
 			}
