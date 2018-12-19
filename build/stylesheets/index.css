@@ -5,6 +5,10 @@ html body {
   font-weight : 300;
   color       : rgb(100, 100, 100);
   margin      : 0;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 a {

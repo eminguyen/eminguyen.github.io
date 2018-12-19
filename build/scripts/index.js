@@ -13,14 +13,56 @@ $(document).ready(function() {
 	  $(this).children('.event-content').children('.event-info').slideToggle();
 	});
 
-	$('.experience').click( function() {
-			$('html,body').animate({ scrollTop: $(this).offset().top - ( $(window).height() - $(this).outerHeight(true) ) / 2  }, 500);
-	});
-
 	$('.exp-bubble').click(function() {
 		let parent = $(this).parent();
 		parent.toggleClass('exp-expand');
+				$('html,body').animate({ scrollTop: parent.offset().top - ( $(window).height() - parent.outerHeight(true) ) / 2  }, 500);
 	});
+
+	$(window).scroll(function() {
+
+	  // selectors
+	  var $window = $(window),
+	      $body = $('body'),
+	      $experience = $('.experience');
+				$intro = $('.bio');
+
+	  // Change 33% earlier than scroll position so colour is there when you arrive.
+	  var scroll = $window.scrollTop() + ($window.height() / 3);
+
+
+	  $intro.each(function () {
+			var $this = $(this);
+			var height =  $this.height() / 10;
+			if ($this.position().top + $this.height() > scroll + height) {
+				$body.removeClass(function (index, css) {
+					return (css.match (/(^|\s)back-\S+/g) || []).join(' ');
+				});
+			}
+			else if($this.position().top <= scroll + height) {
+	      $body.addClass('back-' + $(this).data('experience'));
+			}
+		});
+
+	  $experience.each(function () {
+	    var $this = $(this);
+
+	    // if position is within range of this panel.
+	    // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
+	    // Remember we set the scroll to 33% earlier in scroll var.
+	    if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
+
+	      // Remove all classes on body with color-
+	      $body.removeClass(function (index, css) {
+	        return (css.match (/(^|\s)back-\S+/g) || []).join(' ');
+	      });
+
+	      // Add class of currently active div
+	      $body.addClass('back-' + $(this).data('experience'));
+	    }
+	  });
+
+	}).scroll();
 
 	filterSelection("feature", 'project');
 	filterSelection('all', 'event');
