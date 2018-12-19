@@ -1,6 +1,7 @@
 /* Menu */
 .menu {
   filter: url("#shadowed-goo");
+  z-index: 4 !important;
 }
 
 .menu-open-button, .menu-item {

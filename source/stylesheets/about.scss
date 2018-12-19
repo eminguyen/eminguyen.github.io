@@ -1,0 +1,71 @@
+@import url("https://use.typekit.net/qvw6icc.css");
+
+*{
+	box-sizing: border-box;
+}
+
+.project-card{
+	position: relative;
+	width: 100%;
+	overflow-x: hidden;
+	margin-bottom: 8rem;
+	padding: 16rem 2rem;
+	text-align: center;
+	background-color: rgb(14,210,247);
+	mask: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/336747/mk-projet-bg.svg') no-repeat 50% 50%;
+	-webkit-mask: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/336747/mk-projet-bg.svg') no-repeat 50% 50%;
+	mask-size: 200% 100%;
+	-webkit-mask-size: 200% 100%; /** take care to use SVG with no aspect ratio preserved for Safari **/
+	z-index: 1;
+
+	&.project-card--alt{
+		mask-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/336747/mk-projet-bg-alt.svg');
+		-webkit-mask-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/336747/mk-projet-bg-alt.svg');
+	}
+
+	@media(min-width: 72rem){
+		mask-size: 100% 100%;
+		-webkit-mask-size: 100% 100%; /** take care to use SVG with no aspect ratio preserved for Safari **/
+	}
+
+	&:before {
+		position: absolute;
+		bottom: 2rem;
+		left: -20%;
+		display: block;
+		font-size: 20rem;
+		font-weight: 700;
+		white-space: nowrap;
+		color: rgba(255,255,255,0);
+   	content: attr(data-title);
+		z-index: 2;
+	}
+
+	& > *{
+		position: relative;
+		z-index: 3;
+	}
+
+  & > h1{
+    font-size: 4rem;
+    max-width: 60ch;
+    margin: 0 auto 0;
+    color: rgb(255,255,255);
+  }
+
+	& > h2{
+		font-size: 2.5rem;
+		max-width: 80%;
+		margin: 0 auto 0;
+    color: rgb(255,255,255);
+    font-weight: 400;
+	}
+
+  & > a{
+    font-size: 2.5rem;
+    max-width: 40ch;
+    margin: 0 auto 0;
+    color: rgb(255,255,255);
+    font-weight: 400;
+  }
+}

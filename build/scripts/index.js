@@ -13,6 +13,15 @@ $(document).ready(function() {
 	  $(this).children('.event-content').children('.event-info').slideToggle();
 	});
 
+	$('.experience').click( function() {
+			$('html,body').animate({ scrollTop: $(this).offset().top - ( $(window).height() - $(this).outerHeight(true) ) / 2  }, 500);
+	});
+
+	$('.exp-bubble').click(function() {
+		let parent = $(this).parent();
+		parent.toggleClass('exp-expand');
+	});
+
 	filterSelection("feature", 'project');
 	filterSelection('all', 'event');
 	highlightActive("project-filters");
