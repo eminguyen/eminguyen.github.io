@@ -4,8 +4,8 @@ html,
 body,
 #bubbles { height: 100% }
 .bubble {
-  width: 60px;
-  height: 60px;
+  width: 140px;
+  height: 140px;
   background: rgba(14,210,247,.7);
   border-radius: 200px;
   -moz-border-radius: 200px;

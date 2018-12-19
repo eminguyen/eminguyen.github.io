@@ -39,7 +39,10 @@
   border-width: 0px !important;
 }
 
-.exp-bubble:hover { transform: scale(1.1); }
+.exp-bubble:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
 
 .exp-left .exp-bubble {
   margin-left: calc(20% - 15vw);
