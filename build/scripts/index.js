@@ -16,7 +16,9 @@ $(document).ready(function() {
 	$('.exp-bubble').click(function() {
 		let parent = $(this).parent();
 		parent.toggleClass('exp-expand');
-				$('html,body').animate({ scrollTop: parent.offset().top - ( $(window).height() - parent.outerHeight(true) ) / 2  }, 500);
+		if(parent.hasClass('exp-expand')) {
+			$('html,body').animate({ scrollTop: parent.offset().top - ( $(window).height() - parent.outerHeight(true) ) / 2  }, 500);
+		}
 	});
 
 	$(window).scroll(function() {

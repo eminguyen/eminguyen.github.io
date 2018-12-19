@@ -30,6 +30,10 @@
   width: 100vw;
 }
 
+.experience .exp-expand .exp-bubble {
+  border-width: 0px !important;
+}
+
 .exp-bubble:hover { transform: scale(1.1); }
 
 .exp-left .exp-bubble {
@@ -51,8 +55,40 @@
   background-size: 70%;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("../images/ucsd-logo.png");
   background-color: white;
+}
+
+.ucsd {
+  background-image: url("../images/ucsd-logo.png");
+}
+
+.kitu {
+  background-size: 65%;
+  background-image: url("../images/kitu-logo.png");
+}
+
+.ieee {
+  background-image: url("../images/ieee-logo.png");
+  background-size: 80%;
+}
+
+.pib {
+  background-size: 60%;
+  background-image: url("../images/pib-logo.png");
+}
+
+.tesc {
+  background-image: url("../images/tesc-logo.png");
+}
+
+.teals {
+  background-size: 50%;
+  background-image: url("../images/teals-logo.png");
+}
+
+.girls {
+  background-size: 80%;
+  background-image: url("../images/girls-logo.png");
 }
 
 .back-ucsd {
