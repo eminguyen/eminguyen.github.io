@@ -217,6 +217,9 @@ var stage = document.getElementById('stage');
 
 			function onMouseUp()
 			{
+				if(currentDrag.link) {
+				  window.location.href = currentDrag.link;
+				}
 				if(currentDrag != null) currentDrag.dragging = false;
 			}
 
@@ -242,7 +245,13 @@ var stage = document.getElementById('stage');
 			function addIcons()
 			{
 				balls[0].image = 'build/images/linkedin.png';
+				balls[0].link = 'https://www.linkedin.com/in/emilyhuongnguyen/';
 				balls[1].image = 'build/images/facebook.png';
+				balls[1].link = 'https://www.facebook.com/empressily';
+				balls[2].image = 'build/images/github.png';
+				balls[2].link = 'https://github.com/eminguyen';
+				balls[3].image = 'build/images/twitter.png';
+				balls[3].link = 'https://twitter.com/TheEmpressEmi';
 			}
 
 			function genColor()
@@ -305,7 +314,7 @@ var stage = document.getElementById('stage');
 					context.fill()
 					context.clip();
 
-					context.drawImage(image, (balls[i].x - (balls[i].size/2) * .75), (balls[i].y - (balls[i].size * .75 * image.height / image.width)/2), balls[i].size * .75, balls[i].size *  .75 * (image.height / image.width));
+					context.drawImage(image, (balls[i].x - (balls[i].size/2)), (balls[i].y - (balls[i].size * image.height / image.width)/2), balls[i].size, balls[i].size * (image.height / image.width));
 
 					context.beginPath();
 					context.arc(balls[i].x,balls[i].y,balls[i].size, 0, Math.PI * 2, true);
