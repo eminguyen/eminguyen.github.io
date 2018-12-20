@@ -153,7 +153,7 @@ var stage = document.getElementById('stage');
 			var mouseX = 0;
 			var mouseY = 0;
 			var stageWidth = $(document).width();
-			var stageHeight = $(document).height() + 200;
+			var stageHeight = $(document).height();
 			stage.width = stageWidth;
 			stage.height = stageHeight;
 
@@ -172,6 +172,7 @@ var stage = document.getElementById('stage');
 			}
 
 			generate();
+			addIcons();
 
 			var drawingCanvas = document.getElementById('stage');
 			if(drawingCanvas.getContext)
@@ -227,7 +228,7 @@ var stage = document.getElementById('stage');
 				for(var i = 0; i < total; i++)
 				{
 					var ball = {};
-					ball.color = '#0ED2F5';
+					ball.color = genColor();
 					ball.bounce = .5 + (Math.random() * .5);
 					ball.vx = Math.random() * 50 - 25;
 					ball.vy = Math.random() * 50 - 25;
@@ -238,35 +239,20 @@ var stage = document.getElementById('stage');
 				}
 			}
 
-			function genHex()
+			function addIcons()
 			{
-				colors = new Array(14)
-				colors[0]="0"
-				colors[1]="1"
-				colors[2]="2"
-				colors[3]="3"
-				colors[4]="4"
-				colors[5]="5"
-				colors[5]="6"
-				colors[6]="7"
-				colors[7]="8"
-				colors[8]="9"
-				colors[9]="a"
-				colors[10]="b"
-				colors[11]="c"
-				colors[12]="d"
-				colors[13]="e"
-				colors[14]="f"
+				balls[0].image = 'build/images/linkedin.png';
+				balls[1].image = 'build/images/facebook.png';
+			}
 
-				digit = new Array(5)
-				color=""
-				for (i=0;i<6;i++)
-				{
-					digit[i]=colors[Math.round(Math.random()*14)]
-					color = color+digit[i]
-				}
-
-				return color;
+			function genColor()
+			{
+				colors = new Array(3)
+				colors[0] = '#0ED2F5';
+				colors[1] = '#2fddf4';
+				colors[2] = '#1bccf4';
+				colors[3] = '#36def4';
+				return colors[Math.round(Math.random()*3)];
 			}
 
 			function render()
@@ -298,15 +284,34 @@ var stage = document.getElementById('stage');
 
 			function draw()
 			{
+
 				context.clearRect(0, 0, stageWidth, stageHeight);
 				var i = balls.length;
 				while(--i > -1)
 				{
-					context.fillStyle = balls[i].color;
+					var image = document.createElement('img');
+					image.src = balls[i].image;
+					/*context.fillStyle = balls[i].color;
 					context.beginPath();
 					context.arc(balls[i].x,balls[i].y,balls[i].size,0,Math.PI*2,true);
 					context.closePath();
-					context.fill();
+					context.fill();*/
+
+					context.save();
+					context.fillStyle = balls[i].color;
+					context.beginPath();
+					context.arc(balls[i].x,balls[i].y,balls[i].size, 0, Math.PI * 2, true);
+					context.closePath();
+					context.fill()
+					context.clip();
+
+					context.drawImage(image, (balls[i].x - (balls[i].size/2) * .75), (balls[i].y - (balls[i].size * .75 * image.height / image.width)/2), balls[i].size * .75, balls[i].size *  .75 * (image.height / image.width));
+
+					context.beginPath();
+					context.arc(balls[i].x,balls[i].y,balls[i].size, 0, Math.PI * 2, true);
+					context.clip();
+					context.closePath();
+					context.restore();
 				}
 			}
 
