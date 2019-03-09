@@ -1,0 +1,139 @@
+#intro {
+  height: 100vh;
+  background-image: url("../photos/profile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+#about {
+  position: relative;
+  top: -20vh;
+  pointer-events: none;
+}
+
+#stage {
+  top: 0;
+  margin: 0;
+  position: absolute;
+  z-index: 0`;
+  pointer-events: none;
+}
+
+#photos {
+  position: relative;
+  top: -70vh;
+  height: 20vh;
+  width: 100vw;
+}
+
+img {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+  -webkit-filter: grayscale(100%) brightness(1.3);
+  -moz-filter: grayscale(100%) brightness(1.3);
+  -ms-filter: grayscale(100%) brightness(1.3);
+  filter: grayscale(100%) brightness(1.3);
+  filter: gray; /* IE 6-9 */
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  display: none;
+}
+
+img:hover {
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  filter: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 50vw);
+  /*align-items: stretch;*/
+}
+
+.grid img {
+  max-width: 100%;
+}
+
+.appear {
+  display: block;
+}
+
+/*
+.footer {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 5vh;
+  color: rgb(14, 210, 247);
+  font-weight: 700;
+  z-index: 1;
+}
+
+.footer:hover {
+  color: blue;
+}*/
+
+/* Typed.js Blinking Cursor */
+
+#intro p {
+  position: absolute;
+  left: 0;
+  top: 55%;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: rgb(255, 255, 255);
+  background-color: rgba(14, 210, 247, .6);
+  word-wrap: break-word;
+  font-size: 30px;
+}
+
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
+@media (min-width: 720px) {
+  #photos {
+    top: -60vh;
+  }
+
+  img {
+    display: block;
+  }
+
+  .grid {
+    grid-template-columns: repeat(5, 20vw);
+  }
+
+  #intro p {
+    width: auto;
+    border-radius: 0px 30px 30px 0px;
+    font-size: 60px;
+  }
+}

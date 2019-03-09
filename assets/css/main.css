@@ -1,0 +1,77 @@
+html body {
+  font-family: 'Nunito', sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+@import url("https://use.typekit.net/qvw6icc.css");
+* {
+  box-sizing: border-box;
+}
+
+.project-card {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+  margin-bottom: 8rem;
+  padding: 12rem 0rem 16rem 0rem;
+  text-align: center;
+  background-color: #efefef;
+  background-color: #0ed2f7;
+  mask: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/336747/mk-projet-bg.svg") no-repeat 50% 50%;
+  -webkit-mask: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/336747/mk-projet-bg.svg") no-repeat 50% 50%;
+  mask-size: 200% 100%;
+  -webkit-mask-size: 200% 100%;
+  /** take care to use SVG with no aspect ratio preserved for Safari **/
+  z-index: 1;
+}
+.project-card.project-card--alt {
+  mask-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/336747/mk-projet-bg-alt.svg");
+  -webkit-mask-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/336747/mk-projet-bg-alt.svg");
+}
+@media (min-width: 72rem) {
+  .project-card {
+    mask-size: 100% 100%;
+    -webkit-mask-size: 100% 100%;
+    padding: 12rem 2rem 16rem 2rem;
+    /** take care to use SVG with no aspect ratio preserved for Safari **/
+  }
+}
+.project-card:before {
+  position: absolute;
+  bottom: 2rem;
+  left: -20%;
+  display: block;
+  font-size: 20rem;
+  font-weight: 700;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0);
+  content: attr(data-title);
+  z-index: 2;
+}
+.project-card > * {
+  position: relative;
+  z-index: 3;
+}
+.project-card > h1 {
+  font-size: calc(36px + (72 - 36) * ((100vw - 300px) / (1600 - 300)));
+  max-width: 60ch;
+  margin: 0 auto 0;
+  color: white;
+}
+.project-card > h2 {
+  font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+  max-width: 80%;
+  margin: 0 auto 0;
+  color: white;
+  font-weight: 400;
+}
+.project-card > a {
+  font-size: 2.5rem;
+  max-width: 40ch;
+  margin: 0 auto 0;
+  color: white;
+  font-weight: 400;
+}

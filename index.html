@@ -1,33 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>emily nguyen</title>
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="build/images/favicon.png" />
+  <link rel="icon" type="image/png" href="assets/favicon/favicon.png">
 
-  <!-- Work Sans Font from Google Fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet" />
+  <!-- Nunito Font -->
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
   <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+  integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+  crossorigin="anonymous">
 
-  <!-- Personal Stylesheets -->
-  <link rel="stylesheet" type="text/css" href="build/stylesheets/menu.css" />
-  <link rel="stylesheet" type="text/css" href="build/stylesheets/typed.css" />
-  <link rel="stylesheet" type="text/css" href="build/stylesheets/bubbles.css" />
-  <link rel="stylesheet" type="text/css" href="build/stylesheets/timeline.css" />
-  <link rel="stylesheet" type="text/css" href="build/stylesheets/projects.css" />
-  <link rel="stylesheet" type="text/css" href="build/stylesheets/index.css" />
-  <link rel="stylesheet" type="text/css" href="build/stylesheets/about.css" />
-  <link rel="stylesheet" type="text/css" href="build/stylesheets/contacts.css" />
-  <link rel="stylesheet" type="text/css" href="build/stylesheets/experiences.css" />
+  <!-- CSS Files -->
+  <link href="assets/css/index.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/menu.css" rel="stylesheet">
+  <link href="assets/css/bubbles.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- Contact Info -->
+  <!-- Navigation Bar -->
   <nav class="menu">
     <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
     <label class="menu-open-button" for="menu-open">
@@ -42,8 +41,68 @@
     <a href="#contact" class="menu-item"> <i class="far fa-envelope fa-sm"></i> </a>
   </nav>
 
+  <!-- Bubble background -->
+  <div id="intro">
+    <p class="introtext">&lt;emily class="<span id="typed"></span>"/&gt;</p>
+    <div id="bubbles">
+      <div class="bubble x1"></div>
+      <div class="bubble x2"></div>
+      <div class="bubble x3"></div>
+      <div class="bubble x4"></div>
+      <div class="bubble x5"></div>
+      <div class="bubble x6"></div>
+    </div>
+  </div>
+
+  <!-- Intro -->
+  <div id="about" class="project-card">
+    <h1>hi i'm emily</h1>
+
+    <h2>
+      I develop and design cool things usually in the color blue.
+      I like using up my excess energy by running marathons
+      or losing sleep at hackathons. Aside from that, you can catch me spending
+      thousands of hours playing League of Legends, downing
+      copious amounts of boba with my BFF Ysabelle, heelying around when I need a
+      break from my light blue crocs, and driving 200 miles to visit my beloved
+      and annoying siblings on a school day.
+    </h2>
+    <br>
+    <h2>
+      To check out what else I've been up to lately or to view my past work, smash that
+      hamburger to the top right.
+      To connect with me, throw some balls around below or email me at
+      emily@computer.org.
+    </h2>
+  </div>
+
+  <!-- Photos -->
+  <div id="photos">
+    <div class="grid">
+      <img class="appear" src="./assets/photos/grid1.jpg">
+      <img class="appear" src="./assets/photos/grid2.jpg">
+      <img class="appear" src="./assets/photos/grid3.jpg">
+      <img class="appear" src="./assets/photos/grid4.jpg">
+      <img class="appear" src="./assets/photos/grid5.jpg">
+      <img class="appear" src="./assets/photos/grid6.jpg">
+      <img class="appear" src="./assets/photos/grid7.jpg">
+      <img class="appear" src="./assets/photos/grid8.jpg">
+      <img class="appear" src="./assets/photos/grid9.jpg">
+      <img class="appear" src="./assets/photos/grid10.jpg">
+      <img class="appear" src="./assets/photos/grid11.jpg">
+      <img class="appear" src="./assets/photos/grid12.jpg">
+      <img class="appear" src="./assets/photos/grid13.jpg">
+      <img class="appear" src="./assets/photos/grid14.jpg">
+      <img src="./assets/photos/grid15.jpg">
+    </div>
+  </div>
+
+  <canvas id="stage" width="0" height="0"></canvas>
+  <!--<div class="footer"> made with &#9829; by emily nguyen</div>-->
+
 
   <!-- SVG Filters -->
+  <!--
   <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
     <defs>
       <filter id="shadowed-goo">
@@ -61,126 +120,7 @@
         <feComposite in2="goo" in="SourceGraphic" result="mix" />
       </filter>
     </defs>
-  </svg>
-
-  <!-- Intro Page -->
-  <div class="intro">
-    <p class="introtext">&lt;emily class="<span id="typed"></span>"/&gt;</p>
-
-    <!-- Bubble background -->
-    <div id="bubbles">
-      <div class="bubble x1"></div>
-      <div class="bubble x2"></div>
-      <div class="bubble x3"></div>
-      <div class="bubble x4"></div>
-      <div class="bubble x5"></div>
-      <div class="bubble x6"></div>
-    </div>
-
-  </div>
-
-  <!-- Intro -->
-  <div id="about" class="bio project-card" data-experience="ucsd">
-
-    <h1>hi i'm emily</h1>
-
-    <h2>
-    I develop and design cool things usually in the color blue.
-    I like tiring myself by running marathons
-    or losing sleep at hackathons. I also drink loads of boba, play
-    thousands of hours of League of Legends, wear Crocs, and often
-    drive 200 miles for my annoying siblings.
-    </h2>
-  </div>
-
-  <!-- Experiences -->
-
-  <div id="work" class="history">
-
-    <div class="experience clip-it exp-left" data-experience="ucsd">
-      <div class="exp-bubble ucsd">
-      </div>
-      <h2>
-        <span>&nbsp&nbspUniversity of California San Diego&nbsp&nbsp&nbsp</span>
-        <span>&nbsp&nbspComputer Engineering Major / Design Minor&nbsp&nbsp&nbsp</span>
-      </h2>
-    </div>
-
-    <div class="experience clip-it exp-right" data-experience="ucsd">
-      <div class="exp-bubble kitu">
-      </div>
-      <h2>
-        <span>&nbsp&nbsp&nbspKitu Systems&nbsp&nbsp</span>
-        <span>&nbsp&nbsp&nbspSoftware Engineering Intern&nbsp&nbsp</span>
-      </h2>
-    </div>
-
-    <div class="experience clip-it exp-left" data-experience="ieee">
-      <div class="exp-bubble ieee">
-      </div>
-      <h2>
-        <span>&nbsp&nbspIEEE UC San Diego Student Branch&nbsp&nbsp&nbsp</span>
-        <span>&nbsp&nbspVice Chair External&nbsp&nbsp&nbsp</span>
-      </h2>
-    </div>
-
-    <div class="experience clip-it exp-right" data-experience="ucsd">
-      <div class="exp-bubble pib">
-      </div>
-      <h2>
-        <span>&nbsp&nbsp&nbspProject in a Box&nbsp&nbsp&nbsp</span>
-        <span>&nbsp&nbsp&nbspResearch & Development Team&nbsp&nbsp&nbsp</span>
-      </h2>
-    </div>
-
-    <div class="experience clip-it exp-left" data-experience="tesc">
-      <div class="exp-bubble tesc">
-      </div>
-      <h2>
-        <span>&nbsp&nbspTriton Engineering Student Council&nbsp&nbsp&nbsp</span>
-        <span>&nbsp&nbspOutreach Committee&nbsp&nbsp&nbsp</span>
-      </h2>
-    </div>
-
-    <div class="experience clip-it exp-right" data-experience="teals">
-      <div class="exp-bubble teals">
-      </div>
-      <h2>
-        <span>&nbsp&nbsp&nbspTEALS&nbsp&nbsp&nbsp</span>
-        <span>&nbsp&nbsp&nbspAP Computer Science TA&nbsp&nbsp&nbsp</span>
-      </h2>
-    </div>
-
-    <div class="experience clip-it exp-left" data-experience="ucsd">
-      <div class="exp-bubble girls">
-      </div>
-      <h2>
-        <span>&nbsp&nbspGirls Who Code &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
-        <span>&nbsp&nbspFacilitator&nbsp&nbsp&nbsp</span>
-      </h2>
-    </div>
-
-  </div>
-
-  <!-- Projects -->
-  <div id="projects" class="proj project-card">
-    <h1>here's my work</h1>
-    <h2>this section is still a work in progress!</h2>
-  </div>
-
-  <!-- Intro -->
-  <div id="contact" class="project-card">
-    <h1>let's get in touch</h1>
-    <h2>
-    emily@computer.org
-    </h2>
-    <h2>
-    resume here
-    </h2>
-  </div>
-
-  <canvas id="stage" width="400" height="400"></canvas>
-  <div class="footer"> made with &#9829; by emily nguyen</div>
+  </svg>-->
 
   <!-- jQuery CDN -->
   <script
@@ -189,10 +129,9 @@
   crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.js"></script>
 
-  <!-- Typed.js -->
-  <script src="build/scripts/typed.js"></script>
+  <script src="assets/scripts/typed.js"></script>
+  <script src="assets/scripts/balls.js"></script>
+  <script src="assets/scripts/index.js"></script>
 
-  <!-- Personal Javascript -->
-  <script type="text/javascript" src="build/scripts/index.js"></script>
 </body>
 </html>
