@@ -142,3 +142,18 @@ function highlightActive(filterName) {
 	  });
   }
 }
+
+function color() {
+	$("img").addClass("color");
+	$("#intro").addClass("profile2");
+	$("h1").addClass("rainbow-text");
+	$("h2").addClass("rainbow-text");
+	$("p").addClass("rainbow-text");
+	$("#about").addClass("white-background");
+	alert("Let's add some color!");
+}
+
+function hideCanvas() {
+	$("canvas").addClass("disappear");
+	alert("Bye bye balls!");
+}

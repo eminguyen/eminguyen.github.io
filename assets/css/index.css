@@ -3,13 +3,22 @@
   background-image: url("../photos/profile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; 
+  background-position: center;
 }
 
 #about {
   position: relative;
   top: -20vh;
   pointer-events: none;
+}
+
+
+#about h1  {
+  pointer-events: all;
+}
+
+#about h2 {
+  pointer-events: all;
 }
 
 #stage {
@@ -62,6 +71,35 @@ img:hover {
 
 .appear {
   display: block;
+}
+
+/* Random Easter Egg classes */
+
+.profile2 {
+  background-image: url("../photos/profile2.jpg") !important;
+}
+
+.disappear {
+  display: none !important;
+}
+
+.cursor-pointer {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.rainbow-text {
+  background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.white-background {
+  background-color: white !important;
+}
+
+.color {
+  filter: none !important;
 }
 
 /*

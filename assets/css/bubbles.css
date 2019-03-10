@@ -32,7 +32,9 @@ body,
   -webkit-animation: moveclouds 12s linear infinite, sideWays 5s ease-in-out infinite alternate;
   -moz-animation: moveclouds 12s linear infinite, sideWays 5s ease-in-out infinite alternate;
   -o-animation: moveclouds 12s linear infinite, sideWays 5s ease-in-out infinite alternate;
+  cursor: pointer;
 }
+
 .x3 {
   left: 30%;
   -webkit-transform: scale(0.8);
@@ -52,6 +54,7 @@ body,
   -webkit-animation: moveclouds 7s linear infinite, sideWays 3s ease-in-out infinite alternate;
   -moz-animation: moveclouds 7s linear infinite, sideWays 3s ease-in-out infinite alternate;
   -o-animation: moveclouds 7s linear infinite, sideWays 3s ease-in-out infinite alternate;
+  cursor: pointer;
 }
 .x5 {
   left: 60%;
