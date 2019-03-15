@@ -1,0 +1,93 @@
+.background {
+  width: 100vw;
+  position: fixed;
+  top: -30%;
+  filter: brightness(1.4) blur(2.6px) grayscale();
+  background: linear-gradient(black, black),
+    url("../photos/grid3.jpg");
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#bucket-list {
+  position: relative;
+  top: -12rem;
+  display: grid;
+  grid-template-columns: repeat(2, 40vw);
+  margin: 0 10vw;
+  text-align: center;
+  padding: 0;
+}
+
+#bucket-list a {
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+  margin: 0 auto;
+}
+
+#bucket-list .image {
+  width: 36vw;
+  height: 36vw;
+  font-size: 400%;
+  color: white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: rgba(14, 210, 247, .7);
+  background-color: rgba(14, 210, 247, .7);
+  margin: auto;
+}
+
+#bucket-list img {
+  padding: 0 !important;
+  opacity: 0.7;
+  display: block;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 100%;
+}
+
+#bucket-list img:hover {
+  filter: none !important;
+  opacity: 1 !important;
+}
+
+#bucket-list p {
+  color: white;
+  position: relative;
+  top: -40%;
+  background-color: rgba(14, 210, 247, .8);
+  pointer-events: none;
+}
+
+#bucket-list a:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+@media (min-width: 720px) {
+
+  #bucket-list {
+    grid-template-columns: repeat(5, 16vw);
+  }
+
+  #bucket-list .image {
+    width: 12vw;
+    height: 12vw;
+  }
+
+  #bucket-list a {
+    width: 12vw;
+    height: 12vw;
+    margin: 2vh auto;
+  }
+
+}

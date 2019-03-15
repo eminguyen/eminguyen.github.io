@@ -10,6 +10,36 @@ html body {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none !important;
+  display:inline-block !important;
+}
+
+.modal {
+  text-align: center !important;
+}
+
+.close-modal {
+  top: -10px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  color: blue;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0;
+  background: #900;
+  border: 2px solid white;
+  -webkit-border-radius:  26px;
+  -moz-border-radius:     26px;
+  -o-border-radius:       26px;
+  -ms-border-radius:      26px;
+  -moz-box-shadow:    1px 1px 5px rgba(14, 210, 247, .4);
+  -webkit-box-shadow: 1px 1px 5px rgba(14, 210, 247, .4);
+  box-shadow:         1px 1px 5px rgba(14, 210, 247, .4);
+}
+
 .project-card {
   position: relative;
   width: 100%;
@@ -25,6 +55,20 @@ html body {
   /** take care to use SVG with no aspect ratio preserved for Safari **/
   z-index: 1;
 }
+
+.project-card.header {
+  top: -12rem;
+}
+
+.bottom{
+  height: 12rem;
+  overflow: hidden;
+}
+
+.project-card.footer {
+  margin-bottom: 0;
+}
+
 .project-card.project-card--alt {
   mask-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/336747/mk-projet-bg-alt.svg");
   -webkit-mask-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/336747/mk-projet-bg-alt.svg");
@@ -73,4 +117,8 @@ html body {
   margin: 0 auto 0;
   color: white;
   font-weight: 400;
+}
+
+.heading {
+  padding-top: 6rem;
 }
