@@ -1,5 +1,93 @@
-#experience {
+#experience h2 {
   position: relative;
-  top: -30rem;
-  background-image: url("../photos/grid1.jpg");
+  transform: translate(0, -100%);
+  outline: none;
+  text-decoration: none;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  font-size: calc(18px + (52 - 18) * ((100vw - 300px) / (1600 - 300)));
+}
+
+
+a {
+  text-align: center;
+  display: block !important;
+}
+
+img {
+  margin: 0;
+}
+
+#experience h2 span {
+  display: block;
+}
+
+#experience {
+  transition: all 0.3s;
+  position: relative;
+  top: -30vh;
+}
+
+.exp-expand {
+  background-color: #0ed2f7;
+  height: 100vh;
+  width: 100vw;
+}
+
+#experience .exp-expand .exp-bubble {
+  border-width: 0px !important;
+}
+
+.exp-bubble:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.exp-bubble {
+  transition: all 0.3s;
+  border-radius: 50%;
+  border-width:  calc(8px + (14 - 8) * ((100vw - 300px) / (1600 - 300)));;
+  border-style: solid;
+  border-color: #0ed2f7;
+  width:  calc(200px + (500 - 200) * ((100vw - 300px) / (1600 - 300)));
+  height: calc(200px + (500 - 200) * ((100vw - 300px) / (1600 - 300)));
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+@media (max-width: 720px) {
+
+  #experience h2 {
+    background-color: rgba(14, 210, 247, .8);
+  }
+
+}
+
+@media (min-width: 720px) {
+  a {
+    display: inline !important;
+  }
+
+  .exp-right h2 {
+    float: right;
+    text-align: right;
+    background-image: linear-gradient(-100deg, #0ed2f7, rgba(14, 210, 247, 0.7) 40vw, rgba(14, 210, 247, 0));
+  }
+
+  .exp-left h2 {
+    float: left;
+    background-image: linear-gradient(-100deg, rgba(14, 210, 247, 0), rgba(14, 210, 247, 0.7) 40vw, #0ed2f7);
+  }
+
+  .exp-left .exp-bubble {
+    margin-left: calc(20% - 15vw);
+  }
+
+  .exp-right .exp-bubble {
+    margin-left: calc(80% - 15vw);
+  }
 }

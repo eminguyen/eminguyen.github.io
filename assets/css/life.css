@@ -27,6 +27,11 @@
   overflow: hidden;
   transition: all .2s ease-in-out;
   margin: 0 auto;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 #bucket-list .image {
@@ -53,6 +58,11 @@
   -moz-border-radius: 50%;
   border-radius: 50%;
   width: 100%;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 #bucket-list img:hover {

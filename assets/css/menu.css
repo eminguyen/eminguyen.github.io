@@ -17,6 +17,19 @@
   transition: transform ease-out 200ms;
 }
 
+.menu-text {
+  color: white !important;
+  font-size: 20px;
+  visibility: hidden;
+  position: relative;
+  top: -100px;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.menu-text.show {
+  visibility: visible;
+}
+
 .menu-open {
   display: none;
 }
@@ -71,7 +84,6 @@
 }
 
 .menu-item:hover {
-  background: white;
   color: #0ed2f7;
 }
 .menu-item:nth-child(3) {
