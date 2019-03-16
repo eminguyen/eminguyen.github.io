@@ -1,3 +1,11 @@
+body {
+  background: url("../photos/grid3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #0ed2f7;
+}
+
 #experience h2 {
   position: relative;
   transform: translate(0, -100%);

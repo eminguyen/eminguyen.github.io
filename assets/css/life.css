@@ -1,16 +1,9 @@
-.background {
-  width: 100vw;
-  position: fixed;
-  top: -30%;
-  filter: brightness(1.4) blur(2.6px) grayscale();
-  background: linear-gradient(black, black),
-    url("../photos/grid3.jpg");
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: bottom;
+body {
+  background: url("../photos/grid3.jpg");
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-attachment: fixed;
+  background-color: #0ed2f7;
 }
 
 #bucket-list {
