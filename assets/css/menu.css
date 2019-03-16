@@ -4,6 +4,26 @@
   z-index: 4 !important;
 }
 
+.logo {
+  float: left;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  z-index: 4;
+  top: 50px;
+  left: 40px;
+  -webkit-filter: drop-shadow(3px 3px 5px #0ed2f7);
+  filter: drop-shadow(3px 3px 5px #0ed2f7);
+  transition: transform ease-in .2s;
+}
+
+.logo:hover {
+  -webkit-filter: drop-shadow(3px 3px 5px #0ed2f7);
+  filter: drop-shadow(3px 3px 5px #0ed2f7);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 .menu-open-button, .menu-item {
   background: #0ed2f7;
   border-radius: 100%;
@@ -143,7 +163,8 @@
     position: fixed;
   }
 
-  .menu {
+  .logo , .menu {
     position: fixed;
   }
+
 }

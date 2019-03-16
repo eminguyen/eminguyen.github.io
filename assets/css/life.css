@@ -3,7 +3,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: #0ed2f7;
 }
 
 #bucket-list {
@@ -77,6 +76,10 @@ body {
 }
 
 @media (min-width: 720px) {
+
+  body {
+    background-color: #0ed2f7;
+  }
 
   #bucket-list {
     grid-template-columns: repeat(5, 16vw);
