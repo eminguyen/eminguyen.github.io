@@ -9,7 +9,7 @@
   border-radius: 100%;
   width: 80px;
   height: 80px;
-  position: fixed;
+  position: absolute;
   color: white;
   text-align: center;
   line-height: 80px;
@@ -70,7 +70,7 @@
 }
 
 .menu {
-  position: fixed;
+  position: absolute;
   right: 100px;
   padding-top: 20px;
   box-sizing: border-box;
@@ -140,5 +140,10 @@
 @media only screen and (min-width: 768px) {
   .menu-open-button, .menu-item {
     margin-left: -40px;
+    position: fixed;
+  }
+
+  .menu {
+    position: fixed;
   }
 }
