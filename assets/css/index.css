@@ -1,9 +1,9 @@
 #intro {
   height: 100vh;
-  background-image: url("../photos/profile.jpg");
+  background-image: url("../photos/profile.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center bottom;
 }
 
 #about {
@@ -34,6 +34,34 @@
   top: -70vh;
   height: 20vh;
   width: 100vw;
+}
+
+#contact {
+  position: relative;
+  top: calc(-70vh - 100px);
+  pointer-events:none
+}
+
+#contact a {
+  margin-top: calc(50vw - 102px);
+  margin-left: calc(50vw - 50px);
+  width: 100px;
+  height: 100px;
+  position: relative;
+  z-index: 4;
+  transition: all 0.3s;
+  border-radius: 50%;
+  background-color: #0ed2f7;
+  display: block;
+  pointer-events: auto;
+}
+
+#contact img {
+  position: absolute;
+  max-width: 40%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 img {
@@ -157,6 +185,14 @@ img:hover {
 }
 
 @media (min-width: 720px) {
+  #contact {
+    display: none;
+  }
+
+  #intro {
+    background-size: contain;
+  }
+
   #photos {
     top: -60vh;
   }
