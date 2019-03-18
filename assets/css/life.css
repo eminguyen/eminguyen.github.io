@@ -1,17 +1,5 @@
-.background {
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../photos/grid3.jpg");
-  -webkit-transition: background .5s ease;
-  -moz-transition: background .5s ease;
-  -o-transition: background .5s ease;
-  -ms-transition: background .5s ease;
-  transition: background .5s ease;
+html body {
+  background-color: #0ed2f7;
 }
 
 #bucket-list {
