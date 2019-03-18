@@ -1,17 +1,17 @@
-/*.background {
-  min-width: 100vw;
-  min-height: 100vh;
-  max-width: 100vh;
-  max-height: 100vw;
+.background {
+  height: 100vh;
+  width: 100vw;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}*/
-
-html body {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-image: url("../photos/grid3.jpg");
-  background-color: rgb(14, 210, 247);
+  -webkit-transition: background .5s ease;
+  -moz-transition: background .5s ease;
+  -o-transition: background .5s ease;
+  -ms-transition: background .5s ease;
+  transition: background .5s ease;
 }
 
 #bucket-list {
