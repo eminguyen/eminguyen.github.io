@@ -35,7 +35,7 @@ body {
   -moz-border-radius: 50%;
   border-radius: 50%;
   border-style: solid;
-  border-color: rgba(14, 210, 247, .7);
+  border-color: rgba(14, 210, 247, 0);
   background-color: rgba(14, 210, 247, .7);
   margin: auto;
 }
@@ -77,10 +77,6 @@ body {
 
 @media (min-width: 720px) {
 
-  body {
-    background-color: #0ed2f7;
-  }
-
   #bucket-list {
     grid-template-columns: repeat(5, 16vw);
   }
@@ -95,5 +91,4 @@ body {
     height: 12vw;
     margin: 2vh auto;
   }
-
 }

@@ -70,6 +70,15 @@ a {
   margin-bottom: 0;
 }
 
+.footer-text {
+  color: white;
+  font-size: 10px;
+  position: relative;
+  top: -12vh;
+  z-index: 4;
+  font-size: calc(16px + (30 - 16) * ((100vw - 300px) / (1600 - 300)));
+}
+
 .project-card.project-card--alt {
   mask-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/336747/mk-projet-bg-alt.svg");
   -webkit-mask-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/336747/mk-projet-bg-alt.svg");
