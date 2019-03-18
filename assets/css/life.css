@@ -1,4 +1,4 @@
-.background {
+/*.background {
   min-width: 100vw;
   min-height: 100vh;
   max-width: 100vh;
@@ -7,6 +7,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}*/
+
+html body {
+  background-image: url("../photos/grid3.jpg");
+  background-color: rgb(14, 210, 247);
 }
 
 #bucket-list {
