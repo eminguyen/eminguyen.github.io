@@ -129,7 +129,7 @@ h1 {
   color: white;
 }
 h2 {
-  font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(20px + (32 - 20) * ((100vw - 300px) / (1600 - 300)));
   line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
   max-width: 80%;
   margin: 0 auto 0 auto;
