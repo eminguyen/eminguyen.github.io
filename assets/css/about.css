@@ -1,0 +1,76 @@
+#about {
+  padding-top: 5vh;
+  min-height: 100vh;
+}
+
+.section {
+  margin: 0 10vw;
+}
+
+.section h1, h2 {
+  text-align: center;
+  color: #0ed2f7;
+}
+
+.section {
+  color: #272727;
+  font-weight: 200;
+  font-size: 1.3rem;
+}
+
+#bucket-list {
+  font-size: 1.4rem;
+}
+
+.section b {
+  color: #0ed2f7;
+  font-size: 1.6rem;
+}
+
+.about-image {
+  max-width: 100%;
+  vertical-align: middle;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: rgba(14, 210, 247, 0);
+  background-color: rgba(14, 210, 247, .7);
+  display:block;
+  padding:10px;
+  transition: all .2s ease-in-out;
+}
+
+.about-image:hover {
+  transform: scale(1.05);
+}
+
+.about-text-right {
+  display: block;
+  width: auto;
+  width: 100%;
+}
+
+.about-text {
+  padding-bottom: 5%;
+}
+
+@media (min-width: 720px) {
+
+  .section h1, h2 {
+    text-align: left;
+    margin: 0;
+  }
+
+  .about-text-right {
+    vertical-align: middle;
+    display: inline-block;
+    max-width: 55%;
+  }
+
+  .about-image {
+    max-width: 40%;
+    display: inline-block;
+    margin-right: 4%;
+  }
+}

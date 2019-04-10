@@ -48,8 +48,8 @@
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
 .menu-text.show {
   visibility: visible;
-  -webkit-animation: animat_show 0.8s;
-  animation: animat_show 0.8s;
+  -webkit-animation: animat_show 0.4s;
+  animation: animat_show 0.4s;
 }
 
 @-webkit-keyframes animat_show{

@@ -14,17 +14,6 @@ html body {
   font-size: calc(18px + (52 - 18) * ((100vw - 300px) / (1600 - 300)));
 }
 
-.subheading {
-  margin-top: 20vh;
-  text-align: center;
-}
-
-.subheading > h1 {
-  background-color: rgba(14, 210, 247, .8);
-  margin: 0 10vw;
-  border-radius: 50px;
-}
-
 a {
   text-align: center;
   display: block !important;
