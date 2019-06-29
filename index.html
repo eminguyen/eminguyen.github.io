@@ -5,166 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>emily nguyen</title>
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/favicon/favicon.png">
-
-  <!-- Nunito Font -->
-  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-    crossorigin="anonymous">
-
-  <!-- CSS Files -->
-  <link href="assets/css/index.css" rel="stylesheet">
-  <link href="assets/css/main.css" rel="stylesheet">
-  <link href="assets/css/menu.css" rel="stylesheet">
-  <link href="assets/css/bubbles.css" rel="stylesheet">
+  <link href="temp.css" rel="stylesheet">
 </head>
-
 <body>
+  <br>
+  <br>
+  <h1> hello my website is down for my annual rebranding </h1>
+  <h2> i'm currently also hard at work interning at google and starting up acm ucsd </h2>
+  <h2> i'm aiming to have my portfolio back up by the end of july, thank you for your patience </h2>
 
-  <!-- Navigation Bar -->
-  <a href="/"><img class="logo" src="./assets/photos/logo.svg"/></a>
-  <nav class="menu">
-    <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
-    <label class="menu-open-button" for="menu-open">
-      <span class="hamburger hamburger-1"></span>
-      <span class="hamburger hamburger-2"></span>
-      <span class="hamburger hamburger-3"></span>
-    </label>
-
-    <a href="/about" class="menu-item">
-      <i class="fas fa-heart fa-sm"></i>
-      <p class="menu-text">about</p>
-    </a>
-    <a href="/running" class="menu-item">
-      <i class="fas fa-running fa-sm"></i>
-      <p class="menu-text">running</p>
-    </a>
-    <a href="/resume" class="menu-item">
-      <i class="fas fa-file fa-sm"></i>
-      <p class="menu-text">resume</p>
-    </a>
-    <a href="/work" class="menu-item">
-      <i class="fas fa-laptop fa-sm"></i>
-      <p class="menu-text">work</p>
-    </a>
-  </nav>
-
-  <!-- Bubble background -->
-  <div id="intro">
-    <p class="introtext">&lt;emily class="<span id="typed"></span>"/&gt;</p>
-    <div id="bubbles">
-      <div class="bubble x1"></div>
-      <div class="bubble x2" onclick="color()"></div>
-      <div class="bubble x3"></div>
-      <div class="bubble x4" onclick="hideCanvas()"></div>
-      <div class="bubble x5"></div>
-      <div class="bubble x6"></div>
-    </div>
-  </div>
-
-  <!-- Intro -->
-  <div id="about" class="project-card">
-    <h1>hi i'm emily</h1>
-    <h2>
-      I'm a developer and a designer.
-      Aiming to inspire the next generation of coders, my work is
-      playful and interactive in order to pique curiosity. In my free time, I
-      spend my excess energy demoing at hackathons and
-      running marathons.
-    </h2>
-    <br>
-    <h2>
-      Learn more about me by smashing that hamburger at the top-right, find my
-      media by throwing balls around below, and contact me at
-      emily@computer.org.
-    </h2>
-  </div>
-
-  <!-- Photos -->
-  <div id="photos">
-    <div class="grid">
-      <img class="appear" src="/assets/photos/grid1.jpg">
-      <img class="appear" src="/assets/photos/grid2.jpg">
-      <img class="appear" src="/assets/photos/grid3.jpg">
-      <img class="appear" src="/assets/photos/grid4.jpg">
-      <img class="appear" src="/assets/photos/grid5.jpg">
-      <img class="appear" src="/assets/photos/grid6.jpg">
-      <img class="appear" src="/assets/photos/grid7.jpg">
-      <img class="appear" src="/assets/photos/grid8.jpg">
-      <img class="appear" src="/assets/photos/grid9.jpg">
-      <img class="appear" src="/assets/photos/grid10.jpg">
-      <img class="appear" src="/assets/photos/grid11.jpg">
-      <img class="appear" src="/assets/photos/grid12.jpg">
-      <img class="appear" src="/assets/photos/grid13.jpg">
-      <img class="appear" src="/assets/photos/grid14.jpg">
-      <img src="/assets/photos/grid15.jpg">
-    </div>
-  </div>
-
-  <div id="contact">
-    <a href="https://facebook.com">
-      <img class="appear" src="assets/graphics/facebook.png"/>
-    </a>
-    <a href="https://facebook.com">
-      <img class="appear" src="assets/graphics/facebook.png"/>
-    </a>
-    <a href="https://facebook.com">
-      <img class="appear" src="assets/graphics/facebook.png"/>
-    </a>
-    <a href="https://facebook.com">
-      <img class="appear" src="assets/graphics/facebook.png"/>
-    </a>
-    <a href="https://facebook.com">
-      <img class="appear" src="assets/graphics/facebook.png"/>
-    </a>
-    <a href="https://facebook.com">
-      <img class="appear" src="assets/graphics/facebook.png"/>
-    </a>
-  </div>
-
-
-  <canvas id="stage" width="0" height="0"></canvas>
-  <!--<div class="footer"> made with &#9829; by emily nguyen</div>-->
-
-
-  <!-- SVG Filters -->
-  <!--
-  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-    <defs>
-      <filter id="shadowed-goo">
-        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-        <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
-        <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
-        <feOffset in="shadow" dx="1" dy="1" result="shadow" />
-        <feComposite in2="shadow" in="goo" result="goo" />
-        <feComposite in2="goo" in="SourceGraphic" result="mix" />
-      </filter>
-      <filter id="goo">
-        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-        <feComposite in2="goo" in="SourceGraphic" result="mix" />
-      </filter>
-    </defs>
-  </svg>-->
-
-  <!-- jQuery CDN -->
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.js"></script>
-
-  <script src="assets/scripts/typed.js"></script>
-  <script src="assets/scripts/index.js"></script>
-  <script src="assets/scripts/menu.js"></script>
-  <script src="assets/scripts/balls.js"></script>
-
+  <h2> if you need to contact me for work matters, email me at emily@computer.org </h2>
+  <h2>
+    if you're here for personal matters, here's my
+    <a href="https://www.facebook.com/empressily">fb</a>,
+    <a href="https://www.linkedin.com/in/emilyhuongnguyen/">li</a>, and
+    <a href="https://instagram.com/empress.emi">ig</a>
+  </h2>
+  <h2> thank you for visiting! - emily nguyen </h2>
 </body>
 </html>
